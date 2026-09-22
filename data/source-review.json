@@ -1,0 +1,7 @@
+{
+  "sha256": "fa74d4730e7d1ee590d1529aa4d865fa5892532de37988ad568a130e6f45625a",
+  "pages": [2,3,4,5,7,9,11,13,15,17,18,20,22,24,26,28,30,32,35,37,39,42,44,46,48,53,55,57,59,62,71,72],
+  "reviewedAt": "2026-09-20",
+  "method": "PDFium rendering, contact sheet visual review and extracted cell cross-check. Original page renders preserved privately.",
+  "rules": ["Only 2027 except Spark/Captiva 2026", "PEA retained; PEB excluded", "R8P and R8M excluded", "Multiple equivalent model codes retained as child configurations", "Sonic RS/Onix RS color restrictions retained", "Tracker Cinza Urbano restricted to LTZ on page 35", "No spreadsheet prices or discounts", "No inferred Flex or EV fuel specification when absent from PDF"]
+}

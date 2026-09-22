@@ -1,0 +1,12 @@
+from pathlib import Path
+p=Path('scripts/sync-chevrolet-images.ts');s=p.read_text(encoding='utf-8')
+s=s.replace("const candidates: ImageCandidate[]", "interface UserImage { model: string; version: string; color: string; localPath: string; sourceUrl: string; sha256: string; userApproved: boolean }\nconst userImages: UserImage[] = JSON.parse(await readFile('data/user-image-overrides.json', 'utf8').catch(error => { if (error.code === 'ENOENT') return '[]'; throw error }))\nconst candidates: ImageCandidate[]")
+s=s.replace("const assetKey=`${model.slug}:${version.slug}:${color.slug}:front-3q`", "const userImage=userImages.find(i=>i.userApproved && i.model===model.slug && i.version===version.slug && i.color===color.slug)\n   const assetKey=`${model.slug}:${version.slug}:${color.slug}:front-3q`")
+s=s.replace("if(!candidate)throw new Error", "if(!candidate && !userImage)throw new Error")
+s=s.replace("const data=await asset(candidate.url,`${directory}/${safe(version.slug)}/${safe(color.slug)}`)", "const imageDirectory=`${directory}/${safe(version.slug)}/${safe(color.slug)}`\n    if(userImage && (userImage.localPath!==`/assets/vehicles/${imageDirectory}/front-3q.png` || digest(await readFile(`public${userImage.localPath}`))!==userImage.sha256))throw new Error('Arquivo fornecido pelo usuário não corresponde ao manifesto aprovado')\n    const data=await asset(userImage?.sourceUrl || candidate!.url,imageDirectory)")
+s=s.replace("status:'READY',url:candidate.url,localPath:data.localPath", "status:'READY',url:data.originalSourceUrl,localPath:data.localPath")
+p.write_text(s,encoding='utf-8')
+p=Path('tests/catalog-api.test.ts');s=p.read_text(encoding='utf-8')
+s=s.replace("const images=await prisma.vehicleImage.findMany({where:{status:'READY'}});assert(images.length>0)","const images=await prisma.vehicleImage.findMany({where:{status:'READY'}});assert(images.length>0)\n const approved: {localPath:string;sha256:string;sourceUrl:string;userApproved:boolean}[] = JSON.parse(readFileSync('data/user-image-overrides.json','utf8'))")
+s=s.replace("assert(['www.chevrolet.com.br','chevrolet.com.br','cgi.chevrolet.com','vedo.ext.gm.com'].includes(image.sourceDomain!))", "assert(['www.chevrolet.com.br','chevrolet.com.br','cgi.chevrolet.com','vedo.ext.gm.com'].includes(image.sourceDomain!) || approved.some(a=>a.userApproved && a.localPath===image.localPath && a.sha256===image.sha256 && a.sourceUrl===image.originalSourceUrl))")
+p.write_text(s,encoding='utf-8')

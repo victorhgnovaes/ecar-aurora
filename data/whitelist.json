@@ -1,0 +1,11 @@
+[
+  {"slug":"onix","name":"Onix","year":2027,"category":"Hatch","versions":[["R7J",4],["A5F",4],["A3X",4],["A2A",5],["RFL",7],["R7K",7],["R7Y",9],["RGN/RGC",11],["R7R",13]]},
+  {"slug":"onix-plus","name":"Onix Plus","year":2027,"category":"Sedã","versions":[["R8A",17],["A4A",15],["R8G",18],["R8B",18],["PRB",20],["R8R",22]]},
+  {"slug":"sonic","name":"Sonic","year":2027,"category":"SUV","versions":[["R8C",2],["R8D/RGD",3]]},
+  {"slug":"spin","name":"Spin","year":2027,"category":"7 lugares","versions":[["R6M",24],["R6N",26],["R6Q",28],["R6R",28],["R6S",30]]},
+  {"slug":"tracker","name":"Tracker","year":2027,"category":"SUV","versions":[["R8E",32],["R8D",35],["R8F",35],["R8I",37],["RG0",39]]},
+  {"slug":"montana","name":"Montana","year":2027,"category":"Picape","versions":[["RFA",42],["RFC",44],["RFD",46],["RFE",48]]},
+  {"slug":"s10","name":"S10","year":2027,"category":"Picape","versions":[["R9D",53],["R9I",55],["R7F",57],["R7N",57],["PQQ",59],["R6V",62],["R7U",62]]},
+  {"slug":"captiva-ev","name":"Captiva EV","year":2026,"category":"SUV","versions":[["PEA",72]]},
+  {"slug":"spark-euv","name":"Spark EUV","year":2026,"category":"SUV","versions":[["PEA",71]]}
+]

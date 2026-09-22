@@ -1,0 +1,48 @@
+import { test, expect } from '@playwright/test'
+test('catálogo, versão, cor, preço e WhatsApp, sem overflow',async({page,context})=>{
+ const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message))
+ await context.route('https://wa.me/**',route=>route.fulfill({status:200,contentType:'text/html',body:'<p>Destino WhatsApp verificado</p>'}))
+ await page.goto('/veiculos');await expect(page.getByRole('status')).toHaveText('9 modelos encontrados')
+ await page.getByRole('searchbox').fill('Onix');await expect(page.getByRole('status')).toHaveText('2 modelos encontrados')
+ await page.getByRole('article').filter({has:page.getByRole('heading',{name:'Onix',exact:true})}).getByRole('link',{name:'Configurar Onix',exact:true}).click()
+ const response=await page.request.get('/api/vehicles/onix');const model=await response.json()
+ const version=model.versions.find((v:{colors:{imageStatus:string}[]})=>v.colors.filter(c=>c.imageStatus==='READY').length>=2)
+ await page.getByRole('combobox',{name:'Versão',exact:true}).selectOption(version.id)
+ const ready=version.colors.filter((c:{imageStatus:string})=>c.imageStatus==='READY');const first=ready[0];const other=ready.find((c:{additional:string})=>c.additional!==first.additional)
+ await page.getByRole('radio',{name:first.name,exact:true}).check();await expect(page.locator(`img[src="${first.image}"]`)).toBeVisible()
+ const priceBefore=await page.getByTestId('final-price').textContent()
+ await page.getByRole('radio',{name:other.name,exact:true}).check();await expect(page.locator(`img[src="${other.image}"]`)).toBeVisible()
+ await expect(page.getByTestId('final-price')).not.toHaveText(priceBefore!)
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true)
+ await page.screenshot({path:`data/reports/configurator-${page.viewportSize()!.width}.png`,fullPage:true})
+ const popup=page.waitForEvent('popup');await page.getByRole('link',{name:'Solicitar proposta'}).click();const target=await popup;await target.waitForLoadState()
+ const url=new URL(target.url());expect(url.pathname).toBe('/5511989266321');expect(url.hostname).toBe('wa.me');for(const text of [model.name,version.name,other.name,'Preço público configurado'])expect(url.searchParams.get('text')).toContain(text)
+ expect(errors).toEqual([])
+})
+
+test('Spark Amarelo Canário usa o arquivo fornecido pelo usuário', async ({ page }) => {
+ await page.goto('/veiculos/spark-euv')
+ await page.getByRole('radio', { name: 'Amarelo Canário', exact: true }).check()
+ const image = page.getByAltText('Chevrolet Spark EUV, SPARK EUV, Amarelo Canário')
+ await expect(image).toHaveAttribute('src', '/assets/vehicles/spark-euv-2026/pea/amarelo-canario/front-3q.png')
+ await expect.poll(() => image.evaluate(node => (node as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
+ const proposal = new URL(await page.getByRole('link', { name: 'Solicitar proposta' }).getAttribute('href') as string)
+ expect(proposal.pathname).toBe('/5511989266321')
+ expect(proposal.searchParams.get('text')).toContain('Amarelo Canário')
+ await page.screenshot({ path: 'data/reports/spark-amarelo-canario.png', fullPage: true })
+})
+
+for (const selection of [{ version: 'a5f', color: 'Branco Summit', path: '/assets/vehicles/onix-2027/a5f/branco-summit/rear-3q.png' }, { version: 'r7y', color: 'Prata Shark', path: '/assets/vehicles/onix-2027/r7y/prata-shark/front-3q.png' }]) {
+ test(`foto revisada ${selection.version} ${selection.color}`, async ({page}) => {
+  const response = await page.request.get('/api/vehicles/onix')
+  const model = await response.json()
+  const version = model.versions.find((v: {slug: string}) => v.slug === selection.version)
+  await page.goto('/veiculos/onix')
+  await page.getByRole('combobox', {name: 'Versão', exact:true}).selectOption(version.id)
+  await page.getByRole('radio', {name:selection.color,exact:true}).check()
+  const photo = page.locator(`img[src="${selection.path}"]`)
+  await expect(photo).toBeVisible()
+  await expect.poll(() => photo.evaluate(node => (node as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
+  await expect(page.getByText('Imagem específica desta versão e cor ainda não disponível.', {exact:false})).toHaveCount(0)
+ })
+}

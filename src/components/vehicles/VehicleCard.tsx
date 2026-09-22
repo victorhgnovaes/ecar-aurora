@@ -1,0 +1,9 @@
+import { Link } from 'react-router'
+import { ChevronRight, Tag } from 'lucide-react'
+import type { VehicleSummary } from '../../types/vehicle'
+import { VehicleImage } from './VehicleImage'
+import { formatMoney, formatPercent } from '../../utils/money'
+import s from './VehicleCard.module.css'
+export function VehicleCard({ vehicle, compact = false }: { vehicle: VehicleSummary; compact?: boolean }) {
+  return <article className={s.card}><span className={s.badge}><Tag size={19} />Venda corporativa</span><Link className={s.imageLink} to={`/veiculos/${vehicle.slug}`} aria-label={`Configurar Chevrolet ${vehicle.name}`}><VehicleImage src={vehicle.image} loading="lazy" alt={`Chevrolet ${vehicle.name} — imagem ilustrativa do modelo`} /></Link><div className={s.bottom}><div><span className={s.category}>{vehicle.category} · {vehicle.modelYear}</span><h3>{vehicle.name}</h3></div><Link className={compact ? s.arrow : s.configure} to={`/veiculos/${vehicle.slug}`} aria-label={`Configurar ${vehicle.name}`}>{!compact && <span>Configurar</span>}<ChevronRight size={21} /></Link></div>{vehicle.offer ? <div className="card-price"><small>Preço público: <span>{formatMoney(vehicle.offer.publicPrice)}</span></small><span className="discount-badge">{formatPercent(vehicle.offer.discountRate)} de desconto</span><strong>{formatMoney(vehicle.offer.corporatePrice)}</strong><small>{vehicle.offer.versionName} · {vehicle.offer.colorName}</small><small>Economia de {formatMoney(vehicle.offer.discountAmount)}</small></div> : !compact && <p className="card-price">Preço público a partir de <strong>{formatMoney(vehicle.minPrice)}</strong><small>{vehicle.versionCount} versões · Consulte condições corporativas</small></p>}</article>
+}

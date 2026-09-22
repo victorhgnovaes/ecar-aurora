@@ -1,0 +1,8 @@
+from pathlib import Path
+p=Path('server/catalog.service.ts');s=p.read_text(encoding='utf-8')
+s=s.replace("transmission: { contains: query.transmission, mode: 'insensitive' }", "OR: [{ transmission: { startsWith: `Transmissão ${query.transmission}`, mode: 'insensitive' } }, { transmission: { startsWith: `Câmbio ${query.transmission === 'manual' ? 'manual' : 'automático'}`, mode: 'insensitive' } }]")
+s=s.replace("const configuredPrice = v.publicPriceNational.add(a.additionalPriceNational)", "const versionReference = model.images.find(i => i.status === 'READY' && i.vehicleVersionId === v.id && !i.paintColorId)?.localPath\n      const configuredPrice = v.publicPriceNational.add(a.additionalPriceNational)")
+s=s.replace("image: image?.localPath || fallback", "image: image?.localPath || versionReference || fallback")
+p.write_text(s,encoding='utf-8')
+p=Path('src/App.test.tsx');s=p.read_text(encoding='utf-8').replace('5511999999999','5511989266321');s=s.replace("expect(url.hostname).toBe('wa.me');", "expect(url.pathname).toBe('/5511989266321');expect(url.hostname).toBe('wa.me');");p.write_text(s,encoding='utf-8')
+p=Path('e2e/catalog.spec.ts');s=p.read_text(encoding='utf-8').replace(".getByRole('link',{name:/Configurar/}).click()", ".getByRole('link',{name:'Configurar Onix',exact:true}).click()");s=s.replace("expect(url.hostname).toBe('wa.me');", "expect(url.pathname).toBe('/5511989266321');expect(url.hostname).toBe('wa.me');");p.write_text(s,encoding='utf-8')

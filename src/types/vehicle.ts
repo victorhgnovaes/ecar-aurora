@@ -1,0 +1,8 @@
+export type Category = 'Hatch' | 'Sedã' | 'SUV' | 'Picape' | '7 lugares'
+export interface DiscountSource { rate: string; sourceFileName: string; sourceSheet: string; sourceCell: string; sourceTitle: string; sourceSha256: string }
+export interface VehicleOffer { versionName: string; versionId: string; colorName: string; publicPrice: string; discountRate: string; discountAmount: string; corporatePrice: string }
+export interface VehicleColor { discountAmount: string | null; corporatePrice: string | null; id: string; slug: string; name: string; hex: string; paintType: string | null; additional: string; additionalZfm: string | null; finalPrice: string; image: string; imageStatus: 'READY' | 'MISSING'; allowedOptionalCodes: string[] }
+export interface VehicleVersion { discount: DiscountSource | null; id: string; slug: string; name: string; modelCode: string; optionalCode: string; configurationCode: string; publicPriceNational: string; publicPriceZfm: string | null; features: string[]; rawContent: string; technical: Record<string, string | null>; colors: VehicleColor[]; configurations: { modelCode: string; configurationCode: string; optionalCode: string }[]; source: { fileName: string; sha256: string; page: number; listNumber: string; effectiveDate: string }; observations: string | null }
+export interface VehicleSummary { offer: VehicleOffer | null; id: string; slug: string; name: string; modelYear: number; category: Category; image: string; featured: boolean; order: number; minPrice: string | null; versionCount: number }
+export interface Vehicle extends VehicleSummary { versions: VehicleVersion[] }
+export interface VehicleSelection { modelId: string; versionId: string; paintColorId: string; region: 'NATIONAL'; finalPrice: string }

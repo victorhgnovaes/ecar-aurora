@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: ecar
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ecar}
+      POSTGRES_DB: ecar_aurora
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - ecar_catalog_pg:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ecar -d ecar_aurora"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  ecar_catalog_pg:

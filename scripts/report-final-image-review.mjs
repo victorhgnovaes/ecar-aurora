@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises'
+const audit=JSON.parse(await fs.readFile('data/reports/site-audit.json','utf8'))
+for(const file of ['AUDITORIA.md','RELATORIO_ENTREGA.md','README.md']){
+ let text=await fs.readFile(file,'utf8')
+ text=text.replaceAll('26 combinações','24 combinações').replace('194 associações têm arquivo de imagem: 193 de fontes Chevrolet','196 associações têm arquivo de imagem: 195 de fontes Chevrolet e concessionárias autorizadas')
+ text=text.replace('- onix / a3x / Prata Shark\n','').replace('- s10 / r7f / Preto Ouro Negro\n','')
+ await fs.writeFile(file,text)
+}
+await fs.appendFile('ASSET_SOURCES.md','\n## Revisão adicional — 22/09/2026\n\nInstaladas as fotos do Onix Pro A3X Prata Shark (Artvel, seção oficial Onix Pro 2027) e S10 WT MT R7F Preto Ouro Negro (Chevrolet Brasil, imagem identificada como WT MT 2027). URLs completas, páginas e critérios constam de `data/reviewed-image-manifest.json`. Originais preservados em `data/extracted/final-image-search/`. Somente conversão de formato e redução de tamanho, sem recoloração. Auditoria: 196 associações prontas, 24 pendentes, nenhum erro.\n\nDescartados após inspeção: o seletor da Granleste reutiliza imagens do Onix comum em Pro/Activ (inclusive Activ sem rack); a Américas identifica como Chassis R9D uma imagem com caçamba; a foto Chassi da Cotac corresponde à frente antiga. Nenhuma dessas imagens foi publicada como correspondência exata.\n')
+await fs.writeFile('data/reports/final-image-review.json',JSON.stringify({generatedAt:new Date().toISOString(),installed:[{model:'onix',version:'a3x',color:'prata-shark'},{model:'s10',version:'r7f',color:'preto-ouro-negro'}],ready:audit.images.ready,missing:audit.images.missing,rejected:[{source:'https://www.granlestegm.com.br/novos/chevrolet-onix',reason:'Color selector reuses standard Onix exterior for Pro and Activ; inconsistent wheels and missing Activ roof rails.'},{source:'https://www.chevroletamericas.com.br/novos/s10-2027',reason:'R9D image shows a pickup bed, not chassis cab.'},{source:'https://cotac.com.br/carros/nova-s10-cabine-simples/',reason:'Chassis image has older front styling; not validated for 2027.'}]},null,2))
+console.log({ready:audit.images.ready,missing:audit.images.missing,errors:audit.errors})

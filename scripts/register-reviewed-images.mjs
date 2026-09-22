@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises'
+import sharp from 'sharp'
+const sourcePage='https://www.chevrolet.com.br/carros/novo-onix'
+const items=[{model:'onix',version:'a5f',color:'branco-summit',viewName:'rear-3q',url:'https://news.chevrolet.com.br/content/dam/Media/images/BR/Vehicles/Chevrolet/automóveis/OnixActiv/2027/Onix_log_2.jpg',sourcePage:'https://news.chevrolet.com.br/newsroom.detail.html/Pages/news/br/pt/2026/jun/0603-onix-2027.html',rule:'Visual review of original Chevrolet 2027 press photo identifying ONIX LOG; official model page caption identifies white LOG; PDF page 4 has a single white paint, Branco Summit. Rear cargo view retained without recoloring.',localSource:'data/extracted/pending-image-review/Onix_log_2.jpg'},{model:'onix',version:'r7y',color:'prata-shark',viewName:'front-3q',url:'https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/versions/versiones-v3/desktop/3_activ_turbo_atdesk.png',sourcePage,rule:'Official 2027 model page labels this exact asset as Onix Activ Turbo prata; visual review confirms Activ exterior. PDF page 9 lists one silver paint, Prata Shark. Existing official image retained unchanged.',localSource:'data/extracted/activ-official.png'}]
+for(const item of items){const directory=`public/assets/vehicles/onix-2027/${item.version}/${item.color}`;await fs.mkdir(directory,{recursive:true});await sharp(item.localSource).resize({width:1400,withoutEnlargement:true}).png({compressionLevel:9}).toFile(`${directory}/${item.viewName}.png`)}
+const approved=items.map(({localSource,...entry})=>entry)
+await fs.writeFile('data/reviewed-image-manifest.json',JSON.stringify(approved,null,2))
+const manifest=JSON.parse(await fs.readFile('data/image-manifest.json','utf8'))
+for(const entry of approved){const i=manifest.findIndex(a=>a.model===entry.model&&a.version===entry.version&&a.color===entry.color);if(i<0)manifest.push(entry);else manifest[i]=entry}
+await fs.writeFile('data/image-manifest.json',JSON.stringify(manifest,null,2))

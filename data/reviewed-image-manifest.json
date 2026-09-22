@@ -1,0 +1,38 @@
+[
+  {
+    "model": "onix",
+    "version": "a5f",
+    "color": "branco-summit",
+    "viewName": "rear-3q",
+    "url": "https://news.chevrolet.com.br/content/dam/Media/images/BR/Vehicles/Chevrolet/automóveis/OnixActiv/2027/Onix_log_2.jpg",
+    "sourcePage": "https://news.chevrolet.com.br/newsroom.detail.html/Pages/news/br/pt/2026/jun/0603-onix-2027.html",
+    "rule": "Visual review of original Chevrolet 2027 press photo identifying ONIX LOG; official model page caption identifies white LOG; PDF page 4 has a single white paint, Branco Summit. Rear cargo view retained without recoloring."
+  },
+  {
+    "model": "onix",
+    "version": "r7y",
+    "color": "prata-shark",
+    "viewName": "front-3q",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/versions/versiones-v3/desktop/3_activ_turbo_atdesk.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "rule": "Official 2027 model page labels this exact asset as Onix Activ Turbo prata; visual review confirms Activ exterior. PDF page 9 lists one silver paint, Prata Shark. Existing official image retained unchanged."
+  },
+  {
+    "model": "onix",
+    "version": "a3x",
+    "color": "prata-shark",
+    "sourcePage": "https://www.artvelchevrolet.com.br/carros/chevrolet-onix",
+    "rule": "Official Chevrolet dealer 2027 Onix Pro section; visual review confirms silver paint and Pro 16-inch alloy wheels. Prata Shark is the only silver paint listed for A3X in the source catalog.",
+    "url": "https://www.artvelchevrolet.com.br/content/dam/chevrolet/sa/br/pt/master/home/cars/onix/onix-2027/04-versoes/chevrolet-onix-pro-2027.jpg",
+    "viewName": "front-3q"
+  },
+  {
+    "model": "s10",
+    "version": "r7f",
+    "color": "preto-ouro-negro",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "rule": "Chevrolet 2027 page explicitly labels this asset S10 WT MT. Visual review confirms black paint and steel wheels matching R7F; Preto Ouro Negro is the only black paint in its source catalog.",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/refresh-2027/versiones/1/wt-mt-card-versoes-2027.jpeg",
+    "viewName": "front-3q"
+  }
+]

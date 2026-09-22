@@ -1,0 +1,1784 @@
+[
+  {
+    "model": "onix",
+    "version": "rgn-rgc",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/rs/exterior/brancosummit/onix-rs-turbo-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "RS TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "rgn-rgc",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/rs/exterior/pretoouronegro/onix-rs-turbo-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "RS TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "rgn-rgc",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/rs/exterior/vermelhoscarlet/onix-rs-turbo-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "RS TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7r",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/premier/exterior/azulboreal/v2-onix-premier-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "PREMIER TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7r",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/premier/exterior/brancosummit/onix-premier-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "PREMIER TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7r",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/premier/exterior/pratashark/v2-onix-premier-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "PREMIER TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7r",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/premier/exterior/pretoouronegro/onix-premier-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "PREMIER TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7r",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/premier/exterior/vermelhoscarlet/onix-premier-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "PREMIER TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7k",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/azulboreal/onix-turbo-at-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "a2a",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/azulboreal/onix-turbo-at-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7k",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/brancosummit/onix-turbo-at-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "a2a",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/brancosummit/onix-turbo-at-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7k",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/pratashark/onix-turbo-at-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "a2a",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/pratashark/onix-turbo-at-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7k",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/pretoouronegro/onix-turbo-at-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "a2a",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/pretoouronegro/onix-turbo-at-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7k",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/vermelhoscarlet/onix-turbo-at-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "a2a",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/lt-turbo/exterior/vermelhoscarlet/onix-turbo-at-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "rfl",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt-turbo/exterior/azulboreal/v3-onix-turbo-mt-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "rfl",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt-turbo/exterior/brancosummit/v3-onix-turbo-mt-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "rfl",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt-turbo/exterior/pratashark/v3-onix-turbo-mt-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "rfl",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt-turbo/exterior/pretoouronegro/v3-onix-turbo-mt-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "rfl",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt-turbo/exterior/vermelhoscarlet/v3-onix-turbo-mt-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7j",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt/exterior/azulboreal/onix-10-mt-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "MT 1.0",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7j",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt/exterior/brancosummit/onix-10-mt-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "MT 1.0",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7j",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt/exterior/pratashark/onix-10-mt-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "MT 1.0",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7j",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt/exterior/pretoouronegro/onix-10-mt-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "MT 1.0",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix",
+    "version": "r7j",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/colorizer/trims/mt/exterior/vermelhoscarlet/onix-10-mt-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "officialTrim": "MT 1.0",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8r",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/premier/exterior/azulboreal/onix-premier-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "PREMIER TURBO AT​",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8r",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/premier/exterior/brancosummit/onix-premier-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "PREMIER TURBO AT​",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8r",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/premier/exterior/pratashark/onix-premier-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "PREMIER TURBO AT​",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8r",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/premier/exterior/pretoouronegro/onix-premier-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "PREMIER TURBO AT​",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8r",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/premier/exterior/vermelhoscarlet/onix-premier-velmelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "PREMIER TURBO AT​",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "prb",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/ltz/exterior/azulboreal/onix-plus-ltz-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "LTZ TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "prb",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/ltz/exterior/brancosummit/onix-plus-ltz-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "LTZ TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "prb",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/ltz/exterior/pratashark/onix-plus-ltz-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "LTZ TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "prb",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/ltz/exterior/pretoouronegro/onix-plus-ltz-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "LTZ TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "prb",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/ltz/exterior/vermelhoscarlet/onix-plus-ltz-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "LTZ TURBO AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8b",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/azulboreal/onix-plus-at-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "a4a",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/azulboreal/onix-plus-at-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8b",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/brancosummit/onix-plus-at-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "a4a",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/brancosummit/onix-plus-at-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8b",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/pratashark/onix-plus-at-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "a4a",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/pratashark/onix-plus-at-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8b",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/pretoouronegro/onix-plus-at-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "a4a",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/pretoouronegro/onix-plus-at-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8b",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/vermelhoscarlet/onix-plus-at-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "a4a",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/at/exterior/vermelhoscarlet/onix-plus-at-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO AT e AT ECO",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8g",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/mt/exterior/brancosummit/onix-plus-mt-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8g",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/mt/exterior/pratashark/onix-plus-mt-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8g",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/mt/exterior/azulboreal/onix-plus-mt-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8g",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/mt/exterior/pretoouronegro/onix-plus-mt-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8g",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/mt/exterior/vermelhoscarlet/onix-plus-mt-vermelho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "TURBO MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8a",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/1-0-mt/exterior/azul-boreal/onix-plus-10mt-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "1.0 MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8a",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/1-0-mt/exterior/branco-summit/onix-plus-10mt-bramco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "1.0 MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8a",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/1-0-mt/exterior/prata-shark/onix-plus-10mt-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "1.0 MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8a",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/1-0-mt/exterior/preto-ouro-negro/onix-plus-10mt-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "1.0 MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "onix-plus",
+    "version": "r8a",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix-plus/refresh/colorizer/trims/1-0-mt/exterior/vermelho-scarlet/onix-plus-10mt-bermlho-scarlet-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix-plus",
+    "officialTrim": "1.0 MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spark-euv",
+    "version": "pea",
+    "color": "azul-atlantico",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/spark-euv/refresh/colorizer/trims/euv/exterior/azulatlantico/spark-euv-azul-atlantico-ext.001.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/spark-euv",
+    "officialTrim": "EUV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spark-euv",
+    "version": "pea",
+    "color": "branco-cupuacu",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/spark-euv/refresh/colorizer/trims/euv/exterior/brancocupuacu/spark-euv-branco-cupuacu-ext.001.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/spark-euv",
+    "officialTrim": "EUV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spark-euv",
+    "version": "pea",
+    "color": "cinza-redentor",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/spark-euv/refresh/colorizer/trims/euv/exterior/cinzaredentor/spark-euv-cinza-redentor-ext.001.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/spark-euv",
+    "officialTrim": "EUV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spark-euv",
+    "version": "pea",
+    "color": "azul-anil",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/spark-euv/refresh/colorizer/trims/euv/exterior/azulanil/spark-euv-azul-anil-ext.001.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/spark-euv",
+    "officialTrim": "EUV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spark-euv",
+    "version": "pea",
+    "color": "preto-rio-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/spark-euv/refresh/colorizer/trims/euv/exterior/pretorionegro/spark-euv-preto-rio-negro-ext.001.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/spark-euv",
+    "officialTrim": "EUV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "captiva-ev",
+    "version": "pea",
+    "color": "cinza-diamantina",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/captiva-ev/mov/colorizer/trims/ev/exterior/cinzadiamantina/01-images/my26-captiva-ev-lv1-g1b-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/captiva-ev",
+    "officialTrim": "EV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "captiva-ev",
+    "version": "pea",
+    "color": "branco-lencois",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/captiva-ev/mov/colorizer/trims/ev/exterior/brancolencois/my26-captiva-ev-lv1-gbu-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/captiva-ev",
+    "officialTrim": "EV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "captiva-ev",
+    "version": "pea",
+    "color": "azul-buzios",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/captiva-ev/mov/colorizer/trims/ev/exterior/azulbuzios/01-images/my26-captiva-ev-lv1-gkx-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/captiva-ev",
+    "officialTrim": "EV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "captiva-ev",
+    "version": "pea",
+    "color": "dourado-jeri",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/captiva-ev/mov/colorizer/trims/ev/exterior/douradojeri/my26-captiva-ev-lv1-gie-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/eletrico/captiva-ev",
+    "officialTrim": "EV",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6s",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/premier/exterior/azulboreal/premier-azul-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6s",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/premier/exterior/brancosummit/premier-branco-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6s",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/premier/exterior/pretoouronegro/premier-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6s",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/premier/exterior/pratashark/premier-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6s",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/premier/exterior/cinzaambar/v2-spin-premier-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6s",
+    "color": "cinza-urbano",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/premier/exterior/cinzaurbano/v2-spin-premier-cinza-urbano-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6r",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz7/exterior/azulboreal/ltz-7-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 7 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6r",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz7/exterior/brancosummit/ltz-7-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 7 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6r",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz7/exterior/pretoouronegro/ltz-7-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 7 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6r",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz7/exterior/pratashark/ltz-7-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 7 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6r",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz7/exterior/cinzaambar/v2-spin-ltz7-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 7 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6q",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz/exterior/azulboreal/ltz-5-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 5 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6q",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz/exterior/brancosummit/ltz-5-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 5 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6q",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz/exterior/pretoouronegro/ltz-5-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 5 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6q",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz/exterior/pratashark/ltz-5-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 5 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6q",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/ltz/exterior/cinzaambar/v2-spin-ltz5-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LTZ 5 LUGARES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6n",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/lt/exterior/azulboreal/v1-spin-lt-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6n",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/lt/exterior/brancosummit/v1-spin-lt-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6n",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/lt/exterior/pretoouronegro/v1-spin-lt-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6n",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/lt/exterior/pratashark/v1-spin-lt-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6n",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/lt/exterior/cinzaambar/v1-spin-lt-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6m",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/18at/exterior/azulboreal/spin-at-azul-boreal-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "1.8 AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6m",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/18at/exterior/brancosummit/spin-at-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "1.8 AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6m",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/18at/exterior/pretoouronegro/spin-at-preto-ouro-negro-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "1.8 AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6m",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/18at/exterior/pratashark/spin-at-prata-shark-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "1.8 AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "spin",
+    "version": "r6m",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/crossovers-and-suvs/2026-spin/colorizer-360/trims/18at/exterior/cinzaambar/v2-spin-18at-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/suvs/novo-spin",
+    "officialTrim": "1.8 AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfe",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/premier/exterior/vermelhoscarlet/v2-premier-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfe",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/premier/exterior/brancosummit/v2-premier-branco-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfe",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/premier/exterior/azulboreal/v2-premier-azul-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfe",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/premier/exterior/pratashark/v2-premier-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfe",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/premier/exterior/pretoouronegro/v2-premier-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfe",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/premier/exterior/cinzaambar/montana-premier-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfe",
+    "color": "cinza-urbano",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/premier/exterior/cinzano-urbano/montana-premier-cinza-urbano-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "PREMIER",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfd",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/ltz/exterior/brancosummit/v2-ltz-branco-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfd",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/ltz/exterior/pratashark/v2-ltz-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfd",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/ltz/exterior/pretoouronegro/v2-ltz-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfd",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/ltz/exterior/vermelhoscarlet/v2-ltz-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfd",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/ltz/exterior/azulboreal/v2-ltz-azul-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfd",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/ltz/exterior/cinzaambar/montana-ltz-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfc",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/lt/exterior/vermelhoscarlet/v2-lt-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfc",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/lt/exterior/brancosummit/v2-lt-branco-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfc",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/lt/exterior/azulboreal/v2-lt-azul-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfc",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/lt/exterior/pratashark/v2-lt-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfc",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/lt/exterior/pretoouronegro/v2-lt-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfc",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/lt/exterior/cinzaambar/montana-lt-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "LT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfa",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/mt/exterior/vermelhoscarlet/v2-mt-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfa",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/mt/exterior/brancosummit/v2-mt-branco-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfa",
+    "color": "azul-boreal",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/mt/exterior/azulboreal/v2-mt-azul-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfa",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/mt/exterior/pratashark/v2-mt-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfa",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/mt/exterior/pretoouronegro/v2-mt-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "montana",
+    "version": "rfa",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-montana/mov/colorizer/trims/mt/exterior/cinzaambar/montana-mt-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/chevrolet-montana",
+    "officialTrim": "MT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7u",
+    "color": "branco-dunas",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/hc/exterior/branco-dunas/v2-hc-branco-dunas-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "HIGH COUNTRY",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7u",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/hc/exterior/preto-ouro-negro/v2-hc-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "HIGH COUNTRY",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7u",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/hc/exterior/branco-summit/v2-hc-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "HIGH COUNTRY",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7u",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/hc/exterior/prata-shark/v2-hc-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "HIGH COUNTRY",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7u",
+    "color": "cinza-topazio",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/hc/exterior/cinza-topazio/v2-hc-cinzatopazio-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "HIGH COUNTRY",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7u",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/hc/exterior/vermelho-scarlet/v2-hc-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "HIGH COUNTRY",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7u",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/hc/exterior/cinza-ambar/s10-highcountry-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "HIGH COUNTRY",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "pqq",
+    "color": "branco-dunas",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/z71/exterior/branco-dunas/v2-z71-branco-dunas-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "Z71",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "pqq",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/z71/exterior/preto-ouro-negro/v2-z71-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "Z71",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "pqq",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/z71/exterior/branco-summit/v2-z71-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "Z71",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "pqq",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/z71/exterior/prata-shark/v2-z71-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "Z71",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "pqq",
+    "color": "cinza-topazio",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/z71/exterior/cinza-topazio/v2-z71-cinzatopazio-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "Z71",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "pqq",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/z71/exterior/vermelho-scarlet/v2-z71-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "Z71",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "pqq",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/z71/exterior/cinza-ambar/s10-z71-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "Z71",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r6v",
+    "color": "branco-dunas",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/ltz/exterior/branco-dunas/v2-ltz-branco-dunas-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r6v",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/ltz/exterior/preto-ouro-negro/v2-ltz-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r6v",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/ltz/exterior/branco-summit/v2-ltz-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r6v",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/ltz/exterior/prata-shark/v2-ltz-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r6v",
+    "color": "cinza-topazio",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/ltz/exterior/cinza-topazio/v2-ltz-cinzatopazio-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r6v",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/ltz/exterior/vermelho-scarlet/v2-ltz-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r6v",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/ltz/exterior/cinza-ambar/s10-ltz-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "LTZ",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7n",
+    "color": "branco-dunas",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/wt-at/exterior/branco-dunas/v2-wt-branco-dunas-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "WT AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7n",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/wt-at/exterior/preto-ouro-negro/v2-wt-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "WT AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7n",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/wt-at/exterior/branco-summit/v2-wt-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "WT AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7n",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/wt-at/exterior/prata-shark/v2-wt-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "WT AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7n",
+    "color": "cinza-topazio",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/wt-at/exterior/cinza-topazio/v2-wt-cinzatopazio-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "WT AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7n",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/wt-at/exterior/vermelho-scarlet/v2-wt-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "WT AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r7n",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/wt-at/exterior/cinza-ambar/s10-wt-at-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "WT AT",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r9i",
+    "color": "branco-dunas",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/cs/exterior/branco-dunas/v2-cabinesimple-branco-dunas-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "CABINE SIMPLES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r9i",
+    "color": "preto-ouro-negro",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/cs/exterior/preto-ouro-negro/v2-cabinesimple-preto-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "CABINE SIMPLES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r9i",
+    "color": "branco-summit",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/cs/exterior/branco-summit/v2-cabinesimple-branco-summit-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "CABINE SIMPLES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r9i",
+    "color": "prata-shark",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/cs/exterior/prata-shark/v2-cabinesimple-prata-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "CABINE SIMPLES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r9i",
+    "color": "cinza-topazio",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/cs/exterior/cinza-topazio/v2-cabinesimple-cinzatopazio-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "CABINE SIMPLES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r9i",
+    "color": "vermelho-scarlet",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/cs/exterior/vermelho-scarlet/v2-cabinesimple-vermelho-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "CABINE SIMPLES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "s10",
+    "version": "r9i",
+    "color": "cinza-ambar",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/colorizer-360/trims/cs/exterior/cinza-ambar/s10-cabinesimples-cinza-ambar-ext.001.png",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "officialTrim": "CABINE SIMPLES",
+    "rule": "Exact official trim mapping + normalized official paint name; frame 001 as used by official colorizer"
+  },
+  {
+    "model": "sonic",
+    "version": "r8d-rgd",
+    "color": "vermelho-scarlet",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF58/1EF58__1RS/GFP_V8B_94T_CV2_MDV_H5Hgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5D58DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8d-rgd",
+    "color": "branco-summit",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF58/1EF58__1RS/GAZ_V8B_94T_CV2_MDV_H5Hgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5D58DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8d-rgd",
+    "color": "cinza-urbano",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF58/1EF58__1RS/GRE_V8B_94T_CV2_MDV_H5Hgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5D58DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8d-rgd",
+    "color": "preto-ouro-negro",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF58/1EF58__1RS/GB8_V8B_CV2_MDV_H5Hgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5D58DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8c",
+    "color": "vermelho-scarlet",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE58/1EE58__PR1/GFP_V8B_CV2_MDV_H2Ggmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5P58DV_R8C",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8c",
+    "color": "branco-summit",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE58/1EE58__PR1/GAZ_V8B_CV2_MDV_H2Ggmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5P58DV_R8C",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8c",
+    "color": "prata-shark",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE58/1EE58__PR1/GR2_V8B_CV2_MDV_H2Ggmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5P58DV_R8C",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8c",
+    "color": "cinza-urbano",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE58/1EE58__PR1/GRE_V8B_CV2_MDV_H2Ggmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5P58DV_R8C",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8c",
+    "color": "preto-ouro-negro",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE58/1EE58__PR1/GB8_V8B_CV2_MDV_H2Ggmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5P58DV_R8C",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "sonic",
+    "version": "r8c",
+    "color": "azul-boreal",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE58/1EE58__PR1/GR9_V8B_CV2_MDV_H2Ggmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/sonic",
+    "officialTrim": "5P58DV_R8C",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8d",
+    "color": "vermelho-scarlet",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__1LT/GFP_SCS_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5B76DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8d",
+    "color": "branco-summit",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__1LT/GAZ_SCS_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5B76DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8d",
+    "color": "prata-shark",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__1LT/GR2_SCS_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5B76DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8d",
+    "color": "preto-ouro-negro",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__1LT/GB8_SCS_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5B76DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8d",
+    "color": "cinza-ambar",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__1LT/GEK_SCS_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5B76DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8d",
+    "color": "azul-boreal",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__1LT/GR9_SCS_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5B76DV_R8D",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "rg0",
+    "color": "vermelho-scarlet",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF76/1EF76__1RS/GFP_K60_LFT_MSB_CV2_MDV_TM7_V8B_H73gmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5D76TV_RG0",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "rg0",
+    "color": "branco-summit",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF76/1EF76__1RS/GAZ_K60_LFT_MSB_CV2_MDV_TM7_V8B_H73gmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5D76TV_RG0",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "rg0",
+    "color": "cinza-urbano",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF76/1EF76__1RS/GRE_K60_LFT_MSB_CV2_MDV_TM7_V8B_H73gmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5D76TV_RG0",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "rg0",
+    "color": "preto-ouro-negro",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF76/1EF76__1RS/GB8_K60_LFT_MSB_CV2_MDV_TM7_V8B_H73gmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5D76TV_RG0",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "rg0",
+    "color": "cinza-ambar",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EF76/1EF76__1RS/GEK_K60_LFT_MSB_CV2_MDV_TM7_V8B_H73gmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5D76TV_RG0",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8f",
+    "color": "vermelho-scarlet",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EZ76/1EZ76__1LZ/GFP_V8B_CV2_MDV_HENgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5N76DV_R8F",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8f",
+    "color": "branco-summit",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EZ76/1EZ76__1LZ/GAZ_V8B_CV2_MDV_HENgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5N76DV_R8F",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8f",
+    "color": "prata-shark",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EZ76/1EZ76__1LZ/GR2_V8B_CV2_MDV_HENgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5N76DV_R8F",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8f",
+    "color": "cinza-urbano",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EZ76/1EZ76__1LZ/GRE_V8B_CV2_MDV_HENgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5N76DV_R8F",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8f",
+    "color": "preto-ouro-negro",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EZ76/1EZ76__1LZ/GB8_V8B_CV2_MDV_HENgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5N76DV_R8F",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8f",
+    "color": "cinza-ambar",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EZ76/1EZ76__1LZ/GEK_V8B_CV2_MDV_HENgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5N76DV_R8F",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8f",
+    "color": "azul-boreal",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EZ76/1EZ76__1LZ/GR9_V8B_CV2_MDV_HENgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5N76DV_R8F",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8e",
+    "color": "vermelho-scarlet",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__0LT/GFP_V8B_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5X76DV_R8E",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8e",
+    "color": "branco-summit",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__0LT/GAZ_V8B_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5X76DV_R8E",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8e",
+    "color": "prata-shark",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__0LT/GR2_V8B_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5X76DV_R8E",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8e",
+    "color": "preto-ouro-negro",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__0LT/GB8_V8B_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5X76DV_R8E",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8e",
+    "color": "cinza-ambar",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__0LT/GEK_V8B_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5X76DV_R8E",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8e",
+    "color": "azul-boreal",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1ED76/1ED76__0LT/GR9_V8B_CV2_MDV_HBLgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5X76DV_R8E",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8i",
+    "color": "vermelho-scarlet",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE76/1EE76__PR2/GFP_SCS_K60_LFT_MSB_CV2_MDV_TM7_V8B_HROgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5Y76TV_R8I",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8i",
+    "color": "branco-summit",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE76/1EE76__PR2/GAZ_SCS_K60_LFT_MSB_CV2_MDV_TM7_V8B_HROgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5Y76TV_R8I",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8i",
+    "color": "prata-shark",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE76/1EE76__PR2/GR2_SCS_K60_LFT_MSB_CV2_MDV_TM7_V8B_HROgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5Y76TV_R8I",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8i",
+    "color": "cinza-urbano",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE76/1EE76__PR2/GRE_SCS_K60_LFT_MSB_CV2_MDV_TM7_V8B_HROgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5Y76TV_R8I",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8i",
+    "color": "preto-ouro-negro",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE76/1EE76__PR2/GB8_SCS_K60_LFT_MSB_CV2_MDV_TM7_V8B_HROgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5Y76TV_R8I",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8i",
+    "color": "cinza-ambar",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE76/1EE76__PR2/GEK_SCS_K60_LFT_MSB_CV2_MDV_TM7_V8B_HROgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5Y76TV_R8I",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "tracker",
+    "version": "r8i",
+    "color": "azul-boreal",
+    "url": "https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?country=BR&std=true&v=deg01&i=2027/1EE76/1EE76__PR2/GR9_SCS_K60_LFT_MSB_CV2_MDV_TM7_V8B_HROgmds10.jpg",
+    "sourcePage": "https://www.chevrolet.com.br/modelos/monte-o-seu/tracker",
+    "officialTrim": "5Y76TV_R8I",
+    "rule": "Exact factory model/optional + year + official paint shortCfd matched to PDF name; official CGI urlPattern and default angle"
+  },
+  {
+    "model": "onix",
+    "version": "a5f",
+    "color": "branco-summit",
+    "viewName": "rear-3q",
+    "url": "https://news.chevrolet.com.br/content/dam/Media/images/BR/Vehicles/Chevrolet/automóveis/OnixActiv/2027/Onix_log_2.jpg",
+    "sourcePage": "https://news.chevrolet.com.br/newsroom.detail.html/Pages/news/br/pt/2026/jun/0603-onix-2027.html",
+    "rule": "Visual review of original Chevrolet 2027 press photo identifying ONIX LOG; official model page caption identifies white LOG; PDF page 4 has a single white paint, Branco Summit. Rear cargo view retained without recoloring."
+  },
+  {
+    "model": "onix",
+    "version": "r7y",
+    "color": "prata-shark",
+    "viewName": "front-3q",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/cars/onix/refresh/versions/versiones-v3/desktop/3_activ_turbo_atdesk.png",
+    "sourcePage": "https://www.chevrolet.com.br/carros/novo-onix",
+    "rule": "Official 2027 model page labels this exact asset as Onix Activ Turbo prata; visual review confirms Activ exterior. PDF page 9 lists one silver paint, Prata Shark. Existing official image retained unchanged."
+  },
+  {
+    "model": "onix",
+    "version": "a3x",
+    "color": "prata-shark",
+    "sourcePage": "https://www.artvelchevrolet.com.br/carros/chevrolet-onix",
+    "rule": "Official Chevrolet dealer 2027 Onix Pro section; visual review confirms silver paint and Pro 16-inch alloy wheels. Prata Shark is the only silver paint listed for A3X in the source catalog.",
+    "url": "https://www.artvelchevrolet.com.br/content/dam/chevrolet/sa/br/pt/master/home/cars/onix/onix-2027/04-versoes/chevrolet-onix-pro-2027.jpg",
+    "viewName": "front-3q"
+  },
+  {
+    "model": "s10",
+    "version": "r7f",
+    "color": "preto-ouro-negro",
+    "sourcePage": "https://www.chevrolet.com.br/picapes/s10",
+    "rule": "Chevrolet 2027 page explicitly labels this asset S10 WT MT. Visual review confirms black paint and steel wheels matching R7F; Preto Ouro Negro is the only black paint in its source catalog.",
+    "url": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/pickups-and-trucks/2026-s10/mov/refresh-2027/versiones/1/wt-mt-card-versoes-2027.jpeg",
+    "viewName": "front-3q"
+  }
+]

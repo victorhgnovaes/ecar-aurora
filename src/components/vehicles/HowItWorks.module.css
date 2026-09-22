@@ -1,0 +1,28 @@
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:38px 0 0;padding:0;list-style:none;text-align:left;counter-reset:steps}
+.steps>li{min-width:0;display:flex;flex-direction:column;border:1px solid #dee5ed;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 4px 10px #06265c04;transition:transform .22s ease,box-shadow .22s ease}
+.steps>li:hover,.steps>li:focus-within{transform:translateY(-5px);box-shadow:0 15px 30px #06265c12}
+.topline{display:flex;align-items:center;gap:11px;padding:21px 24px 0;font-size:11px;font-weight:700;letter-spacing:.15px;color:#637087}
+.number{display:grid;place-items:center;width:30px;height:30px;border:1px solid #d7dfe8;border-radius:50%;font-size:12px;color:var(--navy);font-variant-numeric:tabular-nums}
+.content{padding:16px 24px 23px;display:flex;flex-direction:column;flex:1}
+.content h3{font-size:22px;line-height:1.25;letter-spacing:-.7px;margin:0 0 12px}
+.content p{font-size:13px;line-height:1.75;color:#617086;margin:0 0 22px}
+.action{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:44px;padding-top:14px;border-top:1px solid #e1e7ee;font-size:12px;font-weight:800;color:var(--navy);margin-top:auto}
+.action svg{transition:transform .2s}.action:hover svg{transform:translate(2px,-2px)}
+.carScene,.detailsScene,.chatScene{height:166px;position:relative;margin:12px 24px 0}
+.carScene{isolation:isolate;display:grid;place-items:center}
+.carScene:before{content:'';position:absolute;inset:23px -24px 15px;background:#edf3fa;z-index:-2;clip-path:polygon(0 27%,100% 0,100% 83%,0 100%)}
+.carScene img{width:100%;height:137px;object-fit:contain;position:relative;z-index:1;transform:translateY(-5px)}
+.road{position:absolute;left:-24px;right:-24px;bottom:36px;height:1px;background:#b8c9dc;transform:rotate(-6deg)}
+.sceneCaption{position:absolute;bottom:4px;left:0;font-size:9px;letter-spacing:.2px;color:#6b7d91}
+.customize{background:#fffdf9!important;border-top:3px solid var(--orange)!important}.customize .topline{padding-top:19px}
+.detailsScene{margin-top:18px;height:160px;border-radius:11px;background:#f7f2e9;padding:19px 17px;transform:rotate(-2deg)}
+.sampleLabel{display:flex;justify-content:space-between;gap:10px;align-items:center}.sampleLabel span:first-child{font-size:8px;letter-spacing:1.4px;font-weight:800;color:#8a7761}.sampleLabel span:last-child{font-size:13px;font-weight:700;color:#64503d}
+.paintSamples{display:flex;gap:10px;justify-content:space-between;margin:21px 0 16px}.paintSamples>span{width:44px;height:44px;flex-shrink:0;border-radius:9px;background:#fbfaf7;box-shadow:inset 0 0 0 1px #0000000d,0 3px 4px #52433413;display:grid;place-items:center}.paintSamples>span:nth-child(2){background:#313b49}.paintSamples>span:nth-child(3){background:#244f7c;color:white;outline:1px solid #244f7c;outline-offset:3px}.paintSamples>span:nth-child(4){background:#acb0b6}
+.detailLine{display:flex;align-items:center;gap:7px;font-size:9px;color:#81715f}.detailLine span:not(:last-child):after{content:' /';padding-left:7px;color:#b6a791}.detailLine span:last-child{margin-left:auto;color:#77634e;font-weight:800}
+.talk{background:var(--navy)!important;border-color:var(--navy)!important;color:#fff}.talk .topline{color:#b9cce5}.talk .number{border-color:#567397;color:#fff}.talk .content p{color:#c1d2e8}.talk .action{color:white;border-color:#ffffff2b}
+.chatScene{padding-top:13px}.chatHeader{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:700;color:#d4e4f6}.chatHeader svg{color:#6cde9b}.bubble{position:relative;background:#e5f3e9;color:#213c35;border-radius:12px 12px 3px 12px;padding:15px 23px 18px 15px;margin:12px 0 9px 29px;font-size:12px;line-height:1.6;transform:rotate(-2deg)}.bubble svg{position:absolute;bottom:8px;right:10px;color:#437864}.chatCaption{display:block;text-align:right;font-size:9px;color:#a4bbd8}
+@media(max-width:1050px){.steps{gap:14px}.topline{padding-inline:18px;font-size:10px}.content{padding-inline:18px}.content h3{font-size:20px}.carScene,.detailsScene,.chatScene{margin-inline:18px}.paintSamples{gap:7px}.paintSamples>span{width:35px;height:40px}.detailsScene{padding-inline:12px}.sampleLabel span:last-child{font-size:11px}.action{font-size:11px}}
+@media(max-width:700px){.steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:6px 3px 20px;margin:24px -3px 0}.steps>li{flex:0 0 86%;scroll-snap-align:start}.topline{padding-inline:22px;font-size:11px}.content{padding-inline:22px}.content h3{font-size:22px}.carScene,.detailsScene,.chatScene{margin-inline:22px}.paintSamples>span{width:44px;height:44px}.detailsScene{padding-inline:17px}.action{font-size:12px}.steps>li:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.steps>li,.action svg{transition:none}.steps>li:hover,.steps>li:focus-within,.action:hover svg{transform:none}}
+
+@media(max-width:700px){.steps{display:grid;grid-template-columns:1fr;overflow:visible;margin:24px 0 0;padding:0;gap:18px}.steps>li{min-width:0}.carScene,.detailsScene,.chatScene{max-width:360px;width:calc(100% - 44px);margin-inline:auto}.content p{font-size:14px}.action{min-height:48px;font-size:14px}}

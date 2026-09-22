@@ -1,0 +1,171 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+}
+model SourceDocument {
+  id String @id @default(uuid()) @db.Uuid
+  fileName String @map("file_name")
+  sha256 String @unique @db.Char(64)
+  documentDate DateTime? @db.Date @map("document_date")
+  pageCount Int @map("page_count")
+  importedAt DateTime @default(now()) @map("imported_at")
+  versions VehicleVersion[]
+  @@map("source_documents")
+}
+model VehicleModel {
+  id String @id @default(uuid()) @db.Uuid
+  slug String @unique
+  name String
+  displayName String @map("display_name")
+  modelYear Int @map("model_year")
+  category String
+  sortOrder Int @map("sort_order")
+  active Boolean @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  versions VehicleVersion[]
+  images VehicleImage[]
+  @@unique([name, modelYear])
+  @@index([active, category])
+  @@map("vehicle_models")
+}
+model VehicleVersion {
+  id String @id @default(uuid()) @db.Uuid
+  vehicleModelId String @db.Uuid @map("vehicle_model_id")
+  model VehicleModel @relation(fields: [vehicleModelId], references: [id])
+  slug String
+  name String
+  displayName String @map("display_name")
+  modelCode String @map("model_code")
+  configurationCode String @map("configuration_code")
+  optionalCode String @map("optional_code")
+  engine String?
+  transmission String?
+  fuel String?
+  seatCount Int? @map("seat_count")
+  rawContent String @map("raw_content")
+  publicPriceNational Decimal @db.Decimal(14,2) @map("public_price_national")
+  publicPriceZfm Decimal? @db.Decimal(14,2) @map("public_price_zfm")
+  sourceDocumentId String @db.Uuid @map("source_document_id")
+  sourceDocument SourceDocument @relation(fields: [sourceDocumentId], references: [id])
+  sourcePage Int @map("source_page")
+  listNumber String @map("list_number")
+  effectiveDate DateTime @db.Date @map("effective_date")
+  matchingRule String @map("matching_rule")
+  fieldEvidence Json @map("field_evidence")
+  observations String?
+  sortOrder Int @map("sort_order")
+  active Boolean @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  colors VersionPaintColor[]
+  configurations VehicleConfiguration[]
+  images VehicleImage[]
+  discount VersionDiscount?
+  @@unique([vehicleModelId, slug, modelCode, configurationCode, optionalCode], name: "version_identity")
+  @@unique([vehicleModelId, slug])
+  @@index([active, publicPriceNational])
+  @@index([sourceDocumentId, sourcePage])
+  @@map("vehicle_versions")
+}
+model VehicleConfiguration {
+  id String @id @default(uuid()) @db.Uuid
+  vehicleVersionId String @db.Uuid @map("vehicle_version_id")
+  version VehicleVersion @relation(fields: [vehicleVersionId], references: [id])
+  modelCode String @map("model_code")
+  configurationCode String @map("configuration_code")
+  optionalCode String @map("optional_code")
+  sourcePage Int @map("source_page")
+  rawContent String @map("raw_content")
+  @@unique([vehicleVersionId, modelCode, configurationCode, optionalCode])
+  @@map("vehicle_configurations")
+}
+model PaintColor {
+  id String @id @default(uuid()) @db.Uuid
+  slug String @unique
+  name String
+  normalizedName String @map("normalized_name")
+  hexApproximation String? @map("hex_approximation")
+  paintType String? @map("paint_type")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  versions VersionPaintColor[]
+  images VehicleImage[]
+  @@map("paint_colors")
+}
+model VersionPaintColor {
+  id String @id @default(uuid()) @db.Uuid
+  vehicleVersionId String @db.Uuid @map("vehicle_version_id")
+  version VehicleVersion @relation(fields: [vehicleVersionId], references: [id])
+  paintColorId String @db.Uuid @map("paint_color_id")
+  color PaintColor @relation(fields: [paintColorId], references: [id])
+  additionalPriceNational Decimal @db.Decimal(14,2) @map("additional_price_national")
+  additionalPriceZfm Decimal? @db.Decimal(14,2) @map("additional_price_zfm")
+  available Boolean @default(true)
+  allowedOptionalCodes String[] @map("allowed_optional_codes")
+  sourcePage Int @map("source_page")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  @@unique([vehicleVersionId, paintColorId])
+  @@map("version_paint_colors")
+}
+model VehicleImage {
+  id String @id @default(uuid()) @db.Uuid
+  assetKey String @unique @map("asset_key")
+  vehicleModelId String @db.Uuid @map("vehicle_model_id")
+  model VehicleModel @relation(fields: [vehicleModelId], references: [id])
+  vehicleVersionId String? @db.Uuid @map("vehicle_version_id")
+  version VehicleVersion? @relation(fields: [vehicleVersionId], references: [id])
+  paintColorId String? @db.Uuid @map("paint_color_id")
+  color PaintColor? @relation(fields: [paintColorId], references: [id])
+  viewName String @map("view_name")
+  localPath String? @map("local_path")
+  originalSourceUrl String? @map("original_source_url")
+  sourceDomain String? @map("source_domain")
+  mimeType String? @map("mime_type")
+  width Int?
+  height Int?
+  sha256 String? @db.Char(64)
+  status String
+  sortOrder Int @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  @@index([vehicleModelId, paintColorId, status])
+  @@map("vehicle_images")
+}
+model ImportRun {
+  id String @id @default(uuid()) @db.Uuid
+  startedAt DateTime @default(now()) @map("started_at")
+  finishedAt DateTime? @map("finished_at")
+  status String
+  sourceSha256 String @map("source_sha256")
+  modelsFound Int @default(0) @map("models_found")
+  versionsFound Int @default(0) @map("versions_found")
+  versionsImported Int @default(0) @map("versions_imported")
+  ambiguousMatches Int @default(0) @map("ambiguous_matches")
+  missingMatches Int @default(0) @map("missing_matches")
+  reportPath String? @map("report_path")
+  @@map("import_runs")
+}
+
+model VersionDiscount {
+  id String @id @default(uuid()) @db.Uuid
+  vehicleVersionId String @unique @db.Uuid @map("vehicle_version_id")
+  version VehicleVersion @relation(fields: [vehicleVersionId], references: [id])
+  rate Decimal @db.Decimal(9,6)
+  sourceFileName String @map("source_file_name")
+  sourceSha256 String @db.Char(64) @map("source_sha256")
+  sourceSheet String @map("source_sheet")
+  sourceCell String @map("source_cell")
+  sourceRow Int @map("source_row")
+  sourceTitle String @map("source_title")
+  rawRate String @map("raw_rate")
+  calculationRule String @map("calculation_rule")
+  audit Json
+  active Boolean @default(true)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  @@map("version_discounts")
+}

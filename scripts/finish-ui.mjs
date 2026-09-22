@@ -1,0 +1,4 @@
+import fs from 'node:fs'
+const file='src/components/layout/Layout.tsx'
+fs.writeFileSync(file,fs.readFileSync(file,'utf8').replace('href={whatsappUrl()}','href={whatsappUrl(undefined, whatsappNumber)}').replace('Versões, cores e equipamentos demonstrativos.','Dados conforme a lista pública Chevrolet indicada na configuração.'))
+fs.appendFileSync('src/pages/VehicleConfiguratorPage/VehicleConfiguratorPage.module.css','\n.colors>div{justify-content:flex-start;overflow-x:auto;padding:6px 5px 12px;scroll-snap-type:x proximity}.color{flex:0 0 90px;scroll-snap-align:start;font-size:11px}.color small{font-size:10px}.rawContent{white-space:pre-wrap;line-height:1.8;overflow-wrap:anywhere}.summary dd{overflow-wrap:anywhere}.carImage img{filter:none;animation:color-arrive .18s ease-out}@keyframes color-arrive{from{opacity:.6}to{opacity:1}}@media(prefers-reduced-motion:reduce){.carImage img{animation:none}}\n')

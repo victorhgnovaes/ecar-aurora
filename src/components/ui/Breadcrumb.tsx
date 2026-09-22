@@ -1,0 +1,2 @@
+import { Link } from 'react-router'
+export function Breadcrumb({ configuration = false }: { configuration?: boolean }) { return <nav className="breadcrumb" aria-label="Caminho da página"><Link to="/inicio">Início</Link><span aria-hidden="true">/</span>{configuration ? <><Link to="/veiculos">Veículos</Link><span aria-hidden="true">/</span><span aria-current="page">Configuração</span></> : <span aria-current="page">Veículos</span>}</nav> }
