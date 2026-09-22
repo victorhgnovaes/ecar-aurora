@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:vercel": "node scripts/build-vercel.mjs",
+    "catalog:export:static": "node scripts/export-static-catalog.mjs",
     "lint": "oxlint src server scripts tests e2e *.config.ts",
     "preview": "vite preview",
     "test": "vitest run --environment jsdom",

@@ -8,16 +8,44 @@ Credenciais, documentos originais, arquivos temporários e banco local não
 são enviados ao GitHub. Os dados gerados do catálogo e os fixtures de teste
 são versionados para preservar esta revisão.
 
-## Próxima etapa: Vercel
+## Deploy na Vercel
 
-O frontend usa `/api` para consultar a API NestJS e o PostgreSQL. Antes de
-publicar na Vercel, é necessário configurar a hospedagem da API e o banco
-de produção ou preparar uma adaptação específica para essa plataforma.
-Importar apenas o frontend ainda não disponibiliza o catálogo online.
+O `vercel.json` configura `npm run build:vercel` e a saída `dist`. Esse build
+publica o catálogo revisado junto com o site, sem depender da API local na
+porta 3001 ou de PostgreSQL em produção. São 9 modelos e 40 versões, com
+cores, preços, descontos e imagens.
 
-O build do frontend é `npm run build`, com saída em `dist`. O backup atualizado
-do banco está em `.local/deploy/catalog.dump` e deve ser transferido por um
-canal privado para o banco escolhido. Não envie esse backup ao GitHub.
+Os dados são exportados das respostas reais da API em
+`data/generated/api-fixtures.json`, também usado pelos testes. O build verifica
+as imagens e gera `dist/catalog`. Uma `VITE_API_URL` antiga é ignorada nesse modo.
+
+Na Vercel, use a raiz do repositório. Remova overrides antigos de Build Command
+ou configure `npm run build:vercel`; Output Directory: `dist`. Faça um novo
+deploy após enviar a correção ao GitHub. As rotas internas têm fallback para
+a aplicação, enquanto arquivos ausentes do catálogo retornam 404.
+
+Para testar sem API: `npm run build:vercel` e `npm run preview`.
+Confira `/inicio`, `/veiculos`, `/veiculos/onix` e `/catalog/vehicles.json`.
+
+### Atualizar o catálogo publicado
+
+O site usa os dados do último deploy. Após importar e revisar alterações no
+banco local, com a API local funcionando, execute:
+
+```powershell
+npm run catalog:export:static
+npm run build:vercel
+npm test
+```
+
+Revise o diff de `data/generated/api-fixtures.json` e envie ao GitHub para
+gerar o novo deploy. O exportador copia apenas as respostas públicas da API.
+Nunca publique `.env`, documentos originais ou backups do banco.
+
+`npm run dev` e `npm run build` continuam usando a API NestJS/PostgreSQL.
+Para um catálogo atualizado dinamicamente, hospede esses serviços e use o
+build normal com `VITE_API_URL` apontando para a API pública. Consulte
+`DEPLOY_LOCAWEB.md` para o modo com servidor e banco.
 
 ## Atualizações futuras
 
