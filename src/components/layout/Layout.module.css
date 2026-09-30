@@ -12,3 +12,9 @@
 }
 @media(max-width:700px){.footer{padding:28px 0}.footerTop nav{display:grid;grid-template-columns:1fr 1fr;width:100%;gap:4px 20px}.footerTop nav a{display:flex;align-items:center;min-height:44px;font-size:14px}.footerTop .brands{zoom:1}.footer p{line-height:1.8}}
 @media(max-width:359px){.inner{padding-inline:12px;gap:6px}.brands{gap:6px}.brands img{width:58px}.brands img:last-child{width:86px}}
+
+/* Aurora Coop: logo horizontal com mais destaque em todas as telas. */
+.brands img:first-child{width:148px}
+@media(max-width:1180px){.brands img:first-child{width:118px}}
+@media(max-width:900px){.brands img:first-child{width:90px}}
+@media(max-width:359px){.brands img:first-child{width:72px}}
