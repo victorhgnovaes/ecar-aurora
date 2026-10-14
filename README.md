@@ -1,5 +1,7 @@
 > Atualização de 22/09/2026: consulte [AUDITORIA.md](AUDITORIA.md) para o estado atual e [DEPLOY_LOCAWEB.md](DEPLOY_LOCAWEB.md) para publicação. WhatsApp: **55 11 98926-6321**. Spark amarelo integrado; 9 cores usam a foto de referência da própria versão, com aviso para consultar a Ecar. E2E validado nas cinco resoluções; npm audit sem vulnerabilidades.
 
+> Preços e condições de outubro/2026: [relatório da atualização e veículos diferentes](docs/conditions-october-2026.md). Execute `npm run prices:import:october` e `npm run discounts:import:october` com as fontes revisadas em `data/sources/monthly/`. A atualização usa a nova lista pública para os 40 veículos existentes e preserva o histórico. Não execute o importador antigo de catálogo para esta atualização.
+
 # Aurora Alimentos + Ecar Frotas
 
 Hotsite Chevrolet com layout original preservado, API NestJS e PostgreSQL. Catálogo com 9 famílias, 40 versões comerciais, 46 configurações de fábrica, 19 pinturas e 220 associações versão/pintura. Os percentuais da planilha foram adicionados por solicitação expressa posterior do usuário.

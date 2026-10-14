@@ -1,6 +1,7 @@
 import { execFileSync } from 'node:child_process'
 import { mkdir, readFile, writeFile, access } from 'node:fs/promises'
 import { dirname } from 'node:path'
+import { calculatePrice, resolveCondition } from '#conditions'
 
 // This is a versioned snapshot of the real catalog API, also used by UI tests.
 // No local database or credentials are needed during a Vercel build.
@@ -21,6 +22,11 @@ for (const model of snapshot.details) {
   for (const version of versions) {
     if (!/^[a-f0-9-]+$/i.test(version.id) || !version.colors?.length) throw new Error('Versão inválida no catálogo')
     versionCount++
+    const rate = resolveCondition(version.discount)
+    for (const color of version.colors) {
+      const expected = rate === null ? null : calculatePrice(color.finalPrice,rate)
+      if (color.corporatePrice !== (expected?.corporatePrice ?? null) || color.discountAmount !== (expected?.discountAmount ?? null)) throw new Error(`Preço corporativo inconsistente: ${model.slug}/${version.slug}/${color.slug}; exporte novamente a API.`)
+    }
     documents.set(`versions/${version.id}`, version)
     documents.set(`versions/${version.id}/colors`, version.colors)
     const { technical, rawContent, features, source } = version

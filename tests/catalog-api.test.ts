@@ -1,12 +1,13 @@
 import 'dotenv/config'
 import { after, test } from 'node:test'
 import assert from 'node:assert/strict'
-import { readFileSync, writeFileSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { Prisma } from '@prisma/client'
 import { prisma } from '../server/db.js'
 import { CatalogService } from '../server/catalog.service.js'
 import type { Catalog } from '../scripts/import-chevrolet-catalog.js'
+import { calculatePrice, resolveCondition } from '#conditions'
 
 const catalog: Catalog = JSON.parse(readFileSync('data/generated/chevrolet-catalog.json','utf8'))
 const service=new CatalogService()
@@ -19,7 +20,8 @@ test('exatamente 9 famílias e 40 versões autorizadas; códigos repetidos indep
  for(const m of models)assert(!/trailblazer|equinox|silverado|blazer/.test(m.slug))
 })
 test('preços Decimal, conteúdo original, página, hash e campos só do PDF',async()=>{
- const hash=createHash('sha256').update(readFileSync(`data/sources/${catalog.source.fileName}`)).digest('hex')
+ const file=existsSync(`data/sources/monthly/${catalog.source.fileName}`)?`data/sources/monthly/${catalog.source.fileName}`:`data/sources/${catalog.source.fileName}`
+ const hash=createHash('sha256').update(readFileSync(file)).digest('hex')
  assert.equal(hash,catalog.source.sha256)
  const models=await prisma.vehicleModel.findMany({where:{active:true},include:{versions:{where:{active:true},include:{sourceDocument:true,colors:{where:{available:true},include:{color:true}},configurations:true}}}})
  for(const model of models)for(const version of model.versions){
@@ -52,21 +54,26 @@ test('imagens locais têm origem oficial ou aprovação explícita, checksum e d
  const approved: {localPath:string;sha256:string;sourceUrl:string;userApproved:boolean}[] = JSON.parse(readFileSync('data/user-image-overrides.json','utf8'))
  for(const image of images){assert(image.localPath?.startsWith('/assets/vehicles/'));assert(['www.chevrolet.com.br','chevrolet.com.br','cgi.chevrolet.com','vedo.ext.gm.com','news.chevrolet.com.br'].includes(image.sourceDomain!) || approved.some(a=>a.userApproved && a.localPath===image.localPath && a.sha256===image.sha256 && a.sourceUrl===image.originalSourceUrl));assert(image.width!>0&&image.height!>0);assert.equal(createHash('sha256').update(readFileSync(`public${image.localPath}`)).digest('hex'),image.sha256)}
 })
-test('descontos de 40 versões vêm da célula E; A3X é 1,9%; cores e ofertas calculam com Decimal',async()=>{
+test('descontos de outubro preservam base, histórico e condições fora do documento; API calcula com a condição efetiva',async()=>{
  const discounts=await prisma.versionDiscount.findMany({where:{active:true},include:{version:{include:{model:true}}}})
  assert.equal(discounts.length,40)
  assert.equal(discounts.find(d=>d.version.slug==='a3x')!.rate.toFixed(6),'0.019000')
- const source=JSON.parse(readFileSync('data/extracted/excel-discounts.json','utf8'))
+ const source=JSON.parse(readFileSync('data/conditions/chevrolet-aurora-2026-10.json','utf8'))
+ const imported=discounts.filter(d=>d.sourceSha256===source.sourceSha256)
+ assert(imported.length>0)
  const models=await service.vehicles({})
  for(const discount of discounts){
-  const row=source.rows.find((r:{row:number})=>r.row===discount.sourceRow)
-  const cell=row.cells.find((c:{cell:string})=>c.cell===discount.sourceCell)
-  assert(new Prisma.Decimal(cell.value).sub(discount.rate).abs().lt('0.000000001'))
-  assert.equal(discount.sourceSha256,source.sha256)
   const version=await service.version(discount.vehicleVersionId)
-  for(const color of version.colors){const amount=new Prisma.Decimal(color.finalPrice).mul(discount.rate).toDecimalPlaces(2,Prisma.Decimal.ROUND_HALF_UP);assert.equal(color.discountAmount,amount.toFixed(2));assert.equal(color.corporatePrice,new Prisma.Decimal(color.finalPrice).sub(amount).toFixed(2))}
+  if(discount.sourceSha256===source.sourceSha256){
+   const audit=discount.audit as {matchedRows:{code:string;modelYear:number;conditionPercent:string}[];history:unknown[];referenceMonth:string}
+   assert.equal(audit.referenceMonth,'2026-10');assert(audit.history.length>0)
+   for(const row of audit.matchedRows){const original=source.rows.find((r:[string,number,string,string,string])=>r[1]===row.modelYear&&r[3]===row.code);assert(original);assert.equal(row.conditionPercent,original[4]);assert.equal(discount.rate.toFixed(6),new Prisma.Decimal(original[4]).div(100).toFixed(6))}
+  }
+  const rate=resolveCondition(version.discount)
+  for(const color of version.colors){const expected=rate===null?null:calculatePrice(color.finalPrice,rate);assert.equal(color.discountAmount,expected?.discountAmount??null);assert.equal(color.corporatePrice,expected?.corporatePrice??null)}
  }
- for(const model of models){assert(model.offer);const version=await service.version(model.offer.versionId);assert(version.colors.some(c=>c.corporatePrice===model.offer!.corporatePrice&&c.finalPrice===model.offer!.publicPrice))}
+ for(const model of models){if(!model.offer)continue;const version=await service.version(model.offer.versionId);assert(version.colors.some(c=>c.corporatePrice===model.offer!.corporatePrice&&c.finalPrice===model.offer!.publicPrice))}
+ const spark=await service.model('spark-euv');assert.equal(spark.modelYear,2026);assert(spark.versions[0].discount?.pendingReason);assert.equal(spark.offer,null)
 })
 
 test('filtro de preço mantém oferta e mínimo dentro da faixa selecionada', async () => {

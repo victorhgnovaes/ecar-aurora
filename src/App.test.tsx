@@ -6,6 +6,7 @@ import '@testing-library/jest-dom/vitest'
 import App from './App'
 import type { Vehicle, VehicleSummary } from './types/vehicle'
 import { finalPrice, formatMoney, discountedPrice, formatPercent } from './utils/money'
+import { billingStates } from '#conditions'
 const fixture: { summaries: VehicleSummary[]; details: Vehicle[] } = JSON.parse(readFileSync('data/generated/api-fixtures.json','utf8'))
 beforeEach(() => {
   window.scrollTo = vi.fn()
@@ -70,3 +71,45 @@ test.each([['onix','r7y'],['s10','r9d']])('foto de referência e consulta à Eca
 test.each(fixture.summaries.map(m=>m.slug))('rota /veiculos/%s',async slug=>{open(`/veiculos/${slug}`);expect(await screen.findByRole('heading',{name:'Monte seu Chevrolet'})).toBeInTheDocument()})
 test.each(['/inexistente','/veiculos/inexistente'])('404 %s',async path=>{open(path);expect(await screen.findByRole('heading',{name:/Vamos encontrar/})).toBeInTheDocument()})
 test('erro de API oferece nova tentativa',async()=>{vi.stubGlobal('fetch',vi.fn().mockRejectedValue(new Error('offline')));open('/veiculos');expect(await screen.findByRole('button',{name:'Tentar novamente'})).toBeInTheDocument()})
+
+test('condição dependente de UF exige seleção e substitui o percentual na simulação e proposta',async()=>{
+ const user=userEvent.setup()
+ const model=structuredClone(fixture.details.find(m=>m.slug==='spark-euv')!)
+ // Synthetic MY27 response verifies the future UI path; no catalog records are created.
+ model.modelYear=2027
+ const version=model.versions[0]
+ version.discount={...version.discount!,rate:'0.148000',referenceMonth:'2026-10',pendingReason:null,requiresBillingState:true,stateRates:{MA:'0.098000',AC:'0.098000',DF:'0.113000',SE:'0.113000',RO:'0.113000',AP:'0.113000',PB:'0.113000'}}
+ vi.stubGlobal('fetch',vi.fn(async(url:string)=>({ok:true,status:200,json:async()=>url.includes('catalog/meta')?{whatsappNumber:'5511989266321'}:url.endsWith('/vehicles')?fixture.summaries:model})))
+ open('/veiculos/spark-euv');await screen.findByLabelText('UF de faturamento')
+ expect(screen.queryByTestId('corporate-price')).not.toBeInTheDocument()
+ expect(screen.getByText('Informe a UF de faturamento para calcular o preço com desconto.')).toBeInTheDocument()
+ for(const uf of billingStates){
+  await user.selectOptions(screen.getByLabelText('UF de faturamento'),uf)
+  const rate=version.discount.stateRates![uf] || version.discount.rate
+  const expected=discountedPrice(finalPrice(version.publicPriceNational,version.colors[0].additional),rate)
+  expect(screen.getByTestId('corporate-price').textContent).toBe(formatMoney(expected.corporatePrice))
+  const message=new URL(screen.getByRole('link',{name:'Solicitar proposta'}).getAttribute('href')!).searchParams.get('text')!
+  expect(message).toContain(`UF de faturamento: ${uf}`);expect(message).toContain(formatPercent(rate));expect(message).toContain(formatMoney(expected.corporatePrice));expect(message).toContain('2026-10')
+ }
+},20000)
+
+test('Spark MY26 preservado não publica desconto MY27 nem valor final enquanto pendente',async()=>{
+ open('/veiculos/spark-euv');await screen.findByLabelText('Versão')
+ expect(screen.queryByTestId('corporate-price')).not.toBeInTheDocument()
+ expect(screen.getByText(/Condição de outubro\/2026 em conferência/)).toBeInTheDocument()
+ const message=new URL(screen.getByRole('link',{name:'Solicitar proposta'}).getAttribute('href')!).searchParams.get('text')!
+ expect(message).toContain('Ano/modelo: 2026');expect(message).toContain('Condição pendente:');expect(message).not.toContain('Preço com desconto:')
+})
+
+test('Captiva exige código de fábrica e não estende condição do 1AAE4PEA ao 5AAE4PEA',async()=>{
+ const user=userEvent.setup();open('/veiculos/captiva-ev');await screen.findByLabelText('Código de fábrica')
+ expect(screen.queryByTestId('corporate-price')).not.toBeInTheDocument()
+ await user.selectOptions(screen.getByLabelText('Código de fábrica'),'1AAE4PEA')
+ expect(screen.getByTestId('corporate-price').textContent).toBe(formatMoney('197991.00'))
+ let message=new URL(screen.getByRole('link',{name:'Solicitar proposta'}).getAttribute('href')!).searchParams.get('text')!
+ expect(message).toContain('1AAE4T / PEA');expect(message).not.toContain('5AAE4T / PEA');expect(message).toContain('10%')
+ await user.selectOptions(screen.getByLabelText('Código de fábrica'),'5AAE4PEA')
+ expect(screen.queryByTestId('corporate-price')).not.toBeInTheDocument()
+ message=new URL(screen.getByRole('link',{name:'Solicitar proposta'}).getAttribute('href')!).searchParams.get('text')!
+ expect(message).toContain('5AAE4T / PEA');expect(message).not.toContain('Preço com desconto:')
+})

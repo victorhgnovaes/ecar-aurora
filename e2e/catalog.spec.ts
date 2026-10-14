@@ -32,7 +32,7 @@ test('Spark Amarelo Canário usa o arquivo fornecido pelo usuário', async ({ pa
  await page.screenshot({ path: 'data/reports/spark-amarelo-canario.png', fullPage: true })
 })
 
-for (const selection of [{ version: 'a5f', color: 'Branco Summit', path: '/assets/vehicles/onix-2027/a5f/branco-summit/rear-3q.png' }, { version: 'r7y', color: 'Prata Shark', path: '/assets/vehicles/onix-2027/r7y/prata-shark/front-3q.png' }]) {
+for (const selection of [{ version: 'a5f', color: 'Branco Summit', path: '/assets/vehicles/onix-2027/a5f/branco-summit/front-3q.png' }, { version: 'r7y', color: 'Prata Shark', path: '/assets/vehicles/onix-2027/r7y/prata-shark/front-3q.png' }]) {
  test(`foto revisada ${selection.version} ${selection.color}`, async ({page}) => {
   const response = await page.request.get('/api/vehicles/onix')
   const model = await response.json()

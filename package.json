@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "imports": { "#conditions": "./shared/conditions.mjs" },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -29,6 +30,8 @@
     "start": "node scripts/start-local.mjs",
     "db:local:start": "node scripts/start-local-db.mjs",
     "discounts:import": "tsx scripts/import-discounts.ts",
+    "discounts:import:october": "tsx scripts/import-october-conditions.ts",
+    "prices:import:october": "tsx scripts/import-october-prices.ts",
     "test:http": "tsx scripts/test-http.ts",
     "images:references": "tsx scripts/sync-version-references.ts",
     "catalog:audit": "tsx scripts/audit-catalog.ts",

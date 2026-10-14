@@ -2,6 +2,13 @@ import { Injectable, NotFoundException, BadRequestException } from '@nestjs/comm
 import { Prisma } from '@prisma/client'
 import { prisma } from './db.js'
 import type { CatalogQuery } from './catalog.dto.js'
+import { calculatePrice, resolveCondition } from '#conditions'
+function conditionMetadata(audit: Prisma.JsonValue, title: string) {
+  const data = audit && typeof audit === 'object' && !Array.isArray(audit) ? audit : {}
+  return { referenceMonth: typeof data.referenceMonth === 'string' ? data.referenceMonth : /setembro|09\/2026/i.test(title) ? '2026-09' : undefined,
+    stateRates: (data.stateRates && typeof data.stateRates === 'object' && !Array.isArray(data.stateRates) ? data.stateRates : {}) as Record<string,string>, requiresBillingState:data.requiresBillingState === true,
+    pendingReason: typeof data.pendingReason === 'string' ? data.pendingReason : null, configurationRates: (data.configurationRates && typeof data.configurationRates==='object' && !Array.isArray(data.configurationRates) ? data.configurationRates : {}) as Record<string,string|null>,requiresConfiguration:data.requiresConfiguration===true }
+}
 const include = { versions: { where: { active: true }, orderBy: { sortOrder: 'asc' as const }, include: { colors: { where: { available: true }, include: { color: true } }, configurations: true, sourceDocument: true, discount: true } }, images: true } satisfies Prisma.VehicleModelInclude
 type Model = Prisma.VehicleModelGetPayload<{ include: typeof include }>
 function serialize(model: Model) {
@@ -13,20 +20,21 @@ function serialize(model: Model) {
     technical: { Motorização: v.engine, Transmissão: v.transmission, Combustível: v.fuel, Lugares: v.seatCount?.toString() ?? null },
     source: { fileName: v.sourceDocument.fileName, sha256: v.sourceDocument.sha256, page: v.sourcePage, listNumber: v.listNumber, effectiveDate: v.effectiveDate.toISOString().slice(0,10) },
     observations: v.observations, configurations: v.configurations.map(c => ({ modelCode: c.modelCode, optionalCode: c.optionalCode, configurationCode: c.configurationCode })),
-    discount: v.discount?.active ? { rate: v.discount.rate.toFixed(6), sourceFileName: v.discount.sourceFileName, sourceSheet: v.discount.sourceSheet, sourceCell: v.discount.sourceCell, sourceTitle: v.discount.sourceTitle, sourceSha256: v.discount.sourceSha256 } : null,
+    discount: v.discount?.active ? { rate: v.discount.rate.toFixed(6), sourceFileName: v.discount.sourceFileName, sourceSheet: v.discount.sourceSheet, sourceCell: v.discount.sourceCell, sourceTitle: v.discount.sourceTitle, sourceSha256: v.discount.sourceSha256, ...conditionMetadata(v.discount.audit,v.discount.sourceTitle) } : null,
     colors: v.colors.map(a => {
       const image = model.images.find(i => i.status === 'READY' && i.paintColorId === a.paintColorId && i.vehicleVersionId === v.id)
       const versionReference = model.images.find(i => i.status === 'READY' && i.vehicleVersionId === v.id && !i.paintColorId)?.localPath
       const configuredPrice = v.publicPriceNational.add(a.additionalPriceNational)
-      const discountAmount = v.discount?.active ? configuredPrice.mul(v.discount.rate).toDecimalPlaces(2, Prisma.Decimal.ROUND_HALF_UP) : null
+      const rate = v.discount?.active ? resolveCondition({rate:v.discount.rate.toFixed(6),...conditionMetadata(v.discount.audit,v.discount.sourceTitle)}) : null
+      const corporate = rate === null ? null : calculatePrice(configuredPrice.toFixed(2),rate)
       return { id: a.color.id, slug: a.color.slug, name: a.color.name, hex: a.color.hexApproximation || '#a2a5ab', paintType: a.color.paintType,
         additional: a.additionalPriceNational.toFixed(2), additionalZfm: a.additionalPriceZfm?.toFixed(2) ?? null,
         finalPrice: v.publicPriceNational.add(a.additionalPriceNational).toFixed(2), allowedOptionalCodes: a.allowedOptionalCodes,
-        discountAmount: discountAmount?.toFixed(2) ?? null, corporatePrice: discountAmount ? configuredPrice.sub(discountAmount).toFixed(2) : null,
+        discountAmount: corporate?.discountAmount ?? null, corporatePrice: corporate?.corporatePrice ?? null,
         image: image?.localPath || versionReference || fallback, imageStatus: image ? 'READY' : 'MISSING' }
     }),
   }))
-  const offers = versions.flatMap(v => v.discount ? v.colors.filter(c => c.corporatePrice !== null).map(c => ({ versionName: v.name, versionId: v.id, colorName: c.name, publicPrice: c.finalPrice, discountRate: v.discount!.rate, discountAmount: c.discountAmount!, corporatePrice: c.corporatePrice! })) : [])
+  const offers = versions.flatMap(v => v.discount ? v.colors.filter(c => c.corporatePrice !== null).map(c => ({ versionName: v.name, versionId: v.id, colorName: c.name, publicPrice: c.finalPrice, discountRate: v.discount!.rate, discountAmount: c.discountAmount!, corporatePrice: c.corporatePrice!,referenceMonth:v.discount!.referenceMonth })) : [])
   const offer = offers.length ? offers.reduce((best, current) => new Prisma.Decimal(current.corporatePrice).lt(best.corporatePrice) ? current : best) : null
   return { id: model.id, slug: model.slug, name: model.displayName, modelYear: model.modelYear, category: model.category, order: model.sortOrder, offer,
     featured: ['onix','tracker','montana','spin'].includes(model.slug), image: fallback,

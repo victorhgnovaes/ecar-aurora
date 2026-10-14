@@ -1,0 +1,26 @@
+import json
+from pathlib import Path
+load=lambda p:json.loads(Path(p).read_text(encoding='utf-8'))
+p=load('data/reports/october-price-match.json')
+c=load('data/reports/conditions-october-2026-import.json')
+f=load('data/generated/api-fixtures.json')
+t=load('tmp/pdfs/october/tables.json')
+v=load('data/reports/conditions-october-2026-validation.json')
+titles={r['page']:next(s.strip() for s in r['text'].splitlines() if s.strip()) for r in t['pages']}
+rows=['# Atualização Chevrolet / Aurora - outubro de 2026','','Preços públicos dos 40 registros existentes sincronizados com a lista fornecida: 33 valores mudaram e 7 permaneceram iguais. Atualizados preços ZFM e adicionais de pintura. Mantidos os 9 modelos, 40 versões, IDs e anos-modelo existentes. Veículos diferentes serão cadastrados posteriormente pelo usuário. A atualização dos preços base substitui a orientação inicial de preservação, conforme esclarecimento expresso posterior.','','34 condições atualizadas, cobrindo 38 linhas de fábrica. Somente Condição é desconto; Comissão de 2,5% não entra no cálculo. Preço final = preço público configurado × (1 − Condição/100), com Decimal e HALF_UP para centavos.','','Fonte pública: '+t['source']['fileName']+'; SHA-256: '+t['source']['sha256']+'. Fonte de descontos: '+c['sourceFileName']+'; SHA-256: '+c['sourceSha256']+'. Todas as 76 páginas públicas extraídas/renderizadas; correspondência por código completo e MY. PDF de condições inteiro conferido visualmente, inclusive vermelho e rodapé.','','Histórico de preços em vehicle_versions.field_evidence.priceHistory; histórico de descontos em version_discounts.audit.history. API, configurador, propostas e snapshot publicado pela Vercel consultam as mesmas condições. O projeto não armazena propostas/contratos/pedidos emitidos.','','## Preços existentes','','| Família / MY | Versão | Página | Anterior (R$) | Lista nova (R$) |','| --- | --- | --- | --- | --- |']
+for r in p['records']:rows.append(f'| {r["model"]} / {r["modelYear"]} | {r["version"]} | {r["page"]} | {r["previousPrice"]} | {r["publicPrice"]} |')
+rows+=['','## Condições atualizadas','','| Família / MY | Versão | Condição | Aplicação |','| --- | --- | --- | --- |']
+for m in f['details']:
+ for x in m['versions']:
+  d=x.get('discount')
+  if d and d['sourceSha256']==c['sourceSha256']:
+   note='Somente 1AAE4PEA; selecionar código' if d.get('requiresConfiguration') else 'Configurações conferidas'
+   rows.append(f'| {m["name"]} / {m["modelYear"]} | {x["name"]} | {float(d["rate"])*100:g}% | {note} |')
+rows+=['','## Veículos diferentes para cadastro posterior','','Famílias ausentes: Trailblazer, Equinox, Blazer EV, Silverado e Equinox EV. A lista contém também outros anos-modelo e configurações de famílias existentes. São 71 configurações sem registro correspondente; não são 71 famílias distintas.','','| Veículo do PDF | MY | Mod. / Config. | Página | Preço público (R$) |','| --- | --- | --- | --- | --- |']
+for r in p['differentVehicles']:rows.append(f'| {titles[r["page"]]} / {r["version"]} | {r["modelYear"]} | {r["modelCode"]} / {r["optionalCode"]} | {r["page"]} | {r["publicPrice"]} |')
+rows+=['','## Condições sem código/ano correspondente','','23 linhas de descontos correspondem a modelos, versões, códigos ou MY diferentes dos cadastrados; não foram associados somente pelo nome.','','| Família | MY | Código no documento | Condição |','| --- | --- | --- | --- |']
+for r in c['pendingRows']:rows.append(f'| {r["family"]} | {r["modelYear"]} | {r["code"]} | {r["conditionPercent"]}% |')
+rows+=['','Montana LT: condição informa 5A43TRFC; cadastro e lista pública informam 5B43TV / RFC. Preço atualizado para R$ 140.990,00; desconto anterior de 16,4% preservado, sem corrigir o PDF por suposição. Onix Pro/Turbo MT, Spin AT e Tracker AT não constam com seus códigos na nova condição e mantêm as condições anteriores identificadas como setembro/2026.','','Captiva: 10% em 1AAE4PEA mediante seleção do código, sem estender a 5AAE4PEA, que não possui condição nesse PDF. Ambas as configurações têm preço público de R$ 219.990,00.','','Spark: registro MY26 preservado. A condição nova é MY27: 14,8% PEA / 14,6% PEB; MA/AC: 9,8%; DF/SE/RO/AP/PB: 11,3%; demais UFs: percentual geral do código. Exceções substituem a condição geral. Fluxo exige UF e foi testado nas 27 UFs; condição MY27 não foi aplicada ao MY26.','','## Verificações e reexecução','',f'Importações idempotentes: 40 preços e 40 descontos mantêm IDs, histórico e timestamps quando reexecutados; {v["colorCalculations"]} combinações de versão/pintura verificadas. Testes de API, interface, proposta, códigos/MY, comissão, UF, configuração e arredondamento. Build TypeScript/API e Vercel validam o snapshot.','','Fontes privadas em data/sources/monthly. Reexecutar: python scripts/extract-october-catalog.py; python scripts/build-october-prices.py; npm run prices:import:october; npm run discounts:import:october; npx tsx scripts/validate-october-conditions.ts. Revisar relatório e publicar o snapshot. Não executar os antigos importadores de julho/setembro.']
+Path('docs').mkdir(exist_ok=True)
+Path('docs/conditions-october-2026.md').write_text('\n'.join(rows)+'\n',encoding='utf-8')
+print('docs/conditions-october-2026.md')
